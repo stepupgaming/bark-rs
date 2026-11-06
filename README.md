@@ -11,7 +11,7 @@ println!("{}", t.text);
 ## How it works
 
 - **`src/format.rs`** reads the `.bark` file (format `bark-levels-v3`): `levels2` (per-row levels, ANS coded), `ansint5`/`ansint6` (scaled integers, ANS coded) and `raw` tensors, xz where flagged. All 723 tensors unpack bit for bit the same as the official `bark_loader.py` (sha256 per tensor, `examples/hashes.rs` against `tools/py_hashes.py`), in about 1.3 s.
-- **`src/mel.rs`** is the log-mel frontend of transformers' `ParakeetFeatureExtractor`: 128 Slaney mels, preemphasis, centered 512-point STFT, per-bin normalization. Max difference from the processor is on the order of float rounding (`examples/mel_check.rs`).
+- **`src/mel.rs`** is the log-mel frontend of transformers' `ParakeetFeatureExtractor`: 128 Slaney mels, preemphasis, centered 512-point STFT, per-bin normalization. Against the processor on the 67 s clip: max abs difference 2.7e-4, mean 5e-7 (`examples/mel_check.rs`).
 - **`graphs/`** holds the three ONNX graphs (encoder, one LSTM decoder step, joint) without weights, 2.3 MB in all. `manifest.json` says which `model.bark` tensor feeds each initializer and how (as stored, transposed, LSTM gate order, packed). `src/model.rs` builds every initializer from `model.bark` at load time and hands it to ORT.
 - **Packed encoder.** Each row of a `levels2` weight holds only 0 and ±K levels (K is 2, or 3 for four tensors). So W = Σ lev_j · T_j, with each T_j ternary. Every encoder MatMul and 1×1 Conv becomes K `MatMulNBits` 2-bit ternary matrices plus a Sum. That's 604M weights at 4 bits each, and the result is bit-exact with fp32 weights.
 - **Decoding** is greedy TDT, like `model.generate`: blank, then tokens plus duration skips, on a 0.25 s silent lead-in.
