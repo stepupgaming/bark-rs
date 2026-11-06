@@ -1,0 +1,17 @@
+bark-rs runs Underdog Bark 3.0 (ConwayResearch/Underdog-Bark-3.0) by Conway Research.
+The model file (model.bark) is not part of this repository; download it from
+https://huggingface.co/ConwayResearch/Underdog-Bark-3.0
+
+The graphs in graphs/ (network structure without weights), vocab.json and the decoding
+conventions derive from that model, which derives from:
+
+  nvidia/parakeet-tdt-0.6b-v3, (c) NVIDIA Corporation, CC-BY-4.0
+    https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+  moondream/parakeet-ultra, (c) Moondream, CC-BY-4.0
+    https://huggingface.co/moondream/parakeet-ultra
+
+License: https://creativecommons.org/licenses/by/4.0/
+
+Changes made here: exported to ONNX, weights removed from the graphs and rebuilt at load
+time from model.bark, encoder matrices repacked as 2-bit ternary MatMulNBits terms (or
+8-bit) that reproduce the stored weights.

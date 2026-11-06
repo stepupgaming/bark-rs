@@ -2,5 +2,7 @@
 
 pub mod format;
 pub mod mel;
+pub mod model;
 
 pub use format::BarkFile;
+pub use model::{Bark, Transcript};
