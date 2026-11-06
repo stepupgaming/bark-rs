@@ -53,7 +53,20 @@ Set `BARK_PYLIB` to an extra site directory if `onnx`/`onnxruntime` live outside
 - 16 kHz mono in. Resampling is the caller's job.
 - One pass over the whole clip. The model card says long-recording segmentation hasn't been qualified. 67 s works; longer audio should be cut into chunks at silences.
 - English only (the model).
-- Android: pyke ships a static ORT for `aarch64-linux-android`. Building and testing on a phone is the next step.
+- Android: it builds (see below), but it hasn't run on a phone yet.
+
+## Android
+
+pyke ships a static ORT for `aarch64-linux-android`, so the binary needs no `.so` (32 MB unstripped for the example). With the NDK (29 here):
+
+```bash
+BIN="$LOCALAPPDATA/Android/Sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/windows-x86_64/bin"
+export CARGO_TARGET_AARCH64_LINUX_ANDROID_LINKER="$BIN/aarch64-linux-android28-clang.cmd"
+export CC_aarch64_linux_android="$BIN/aarch64-linux-android28-clang.cmd" AR_aarch64_linux_android="$BIN/llvm-ar.exe"
+cargo build --release --target aarch64-linux-android --example transcribe
+```
+
+To try it on a phone: `adb push` the binary, `model.bark`, `graphs/` and a 16 kHz WAV to `/data/local/tmp`, then run it with `adb shell`.
 
 ## License
 
