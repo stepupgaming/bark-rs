@@ -39,7 +39,7 @@ Galaxy S25 Ultra (SM-S938U, Android 17, 11 GB RAM), same 67.2 s clip, cool phone
 | exact, `accuracy_level` 4 | 1.48 GB | 8.5 s | 4.9 s | same on this clip |
 | q8, `accuracy_level` 4 | 1.99 GB | 4.6 s | 3.5 s | same on this clip |
 
-`accuracy_level` 4 quantizes the activations to int8, so ARM's int8 dot-product units do the work. On the phone, q8 with level 4 is 3.2x faster than exact (about 14x real time). It is not exact, though, and its accuracy has only been checked on one clip. A longer phone run heats the phone up and slows it down: a later exact run took 23.7 s for 60 s of audio. Keep phone tests short.
+`accuracy_level` 4 quantizes the activations to int8, so ARM's int8 dot-product units do the work. On the phone, q8 with level 4 is 3.2x faster than exact (about 14x real time). It is not exact. On the desktop, across the 13 clips (2,636 words), it gives the identical transcript on 10. The other 3 each differ by one word, all fillers the speaker half says: an extra "Yeah", "have tried" heard as "I've tried", and a dropped "Uh". That's a 0.11% word difference, so it's the pick for the app. x86 and ARM int8 kernels round differently, so this is a close proxy for the phone, not the phone itself. A longer phone run heats the phone up and slows it down: a later exact run took 23.7 s for 60 s of audio. Keep phone tests short.
 
 ## Checks
 
