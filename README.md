@@ -2,8 +2,14 @@
 
 Runs [Underdog Bark 3.0](https://huggingface.co/ConwayResearch/Underdog-Bark-3.0) speech to text in Rust, on ONNX Runtime, straight from the 163 MB `model.bark` file. There's no Python at run time and no second copy of the weights on disk. The target is Android (aarch64); desktop is where it was built and checked.
 
+```bash
+cargo add bark-asr
+```
+
+The crate includes `graphs/` and `graphs-int8/`; ship one of them with your app next to `model.bark`.
+
 ```rust
-let mut bark = bark::Bark::load("model.bark", "graphs", 0)?; // 0 threads = ORT default
+let mut bark = bark_asr::Bark::load("model.bark", "graphs", 0)?; // 0 threads = ORT default
 let t = bark.transcribe_pcm(&interleaved, channels, sample_rate)?; // or transcribe(&mono_16k)
 println!("{}", t.text);
 for w in &t.words {
@@ -108,4 +114,4 @@ In an app, `libc++_shared.so` goes in `jniLibs/arm64-v8a`. For a Tauri 2 app (Ca
 
 ## License
 
-Model weights and derived graphs: CC-BY-4.0, see [NOTICE](NOTICE). Code: MIT or Apache-2.0, at your option ([LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE)).
+Model weights and derived graphs: CC-BY-4.0, see [NOTICE](NOTICE). Code: MIT or Apache-2.0, at your option ([LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE)). The crate ships both, so its license field is `(MIT OR Apache-2.0) AND CC-BY-4.0`.

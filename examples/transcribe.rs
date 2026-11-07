@@ -17,7 +17,7 @@ fn main() -> Result<()> {
         bail!("usage: transcribe <model.bark> <graphs dir> <audio.wav|wave.f32> [fixture.json] [--words] [--pieces] [--max-piece S]");
     }
     let t0 = std::time::Instant::now();
-    let mut bark = bark::Bark::load(&a[0], &a[1], 0)?;
+    let mut bark = bark_asr::Bark::load(&a[0], &a[1], 0)?;
     // the official reference reads a fixture's clip in one pass, so do the same unless told
     match max_piece {
         Some(s) => bark.set_max_piece(s),
@@ -28,9 +28,9 @@ fn main() -> Result<()> {
 
     let (samples, channels, rate) = if a[2].ends_with(".f32") { (raw_f32(&a[2])?, 1, 16000) } else { wav(&a[2])? };
     if show_pieces {
-        let max = max_piece.unwrap_or(bark::model::MAX_PIECE).max(1.0);
-        let wave = bark::audio::to_model_input(&samples, channels, rate)?;
-        for r in bark::audio::segments(&wave, max, max / 3.0) {
+        let max = max_piece.unwrap_or(bark_asr::model::MAX_PIECE).max(1.0);
+        let wave = bark_asr::audio::to_model_input(&samples, channels, rate)?;
+        for r in bark_asr::audio::segments(&wave, max, max / 3.0) {
             eprintln!("piece {:9.3} {:9.3}", r.start as f64 / 16000.0, r.end as f64 / 16000.0);
         }
     }
@@ -59,7 +59,7 @@ fn main() -> Result<()> {
         }
         if let Some(tokens) = fx["tokens"].as_array() {
             // the processor's times count from the start of the lead-in
-            let lead = bark::model::LEAD_IN as f64 / 16000.0;
+            let lead = bark_asr::model::LEAD_IN as f64 / 16000.0;
             let mut off = 0usize;
             let mut worst = 0f64;
             for (w, t) in tokens.iter().zip(&out.tokens) {
@@ -125,7 +125,7 @@ fn wav(path: &str) -> Result<(Vec<f32>, usize, u32)> {
 fn raw_f32(path: &str) -> Result<Vec<f32>> {
     let v: Vec<f32> =
         std::fs::read(path)?.chunks_exact(4).map(|c| f32::from_le_bytes(c.try_into().unwrap())).collect();
-    Ok(v.get(bark::model::LEAD_IN..).unwrap_or_default().to_vec())
+    Ok(v.get(bark_asr::model::LEAD_IN..).unwrap_or_default().to_vec())
 }
 
 /// Peak working set and peak private bytes of this process (Windows only).

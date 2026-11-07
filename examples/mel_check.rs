@@ -11,7 +11,7 @@ fn main() {
     let wave = read_f32(&dir.join("wave.f32"));
     let want = read_f32(&dir.join("feats.f32"));
     let t0 = std::time::Instant::now();
-    let f = bark::mel::Mel::new(128).features(&wave);
+    let f = bark_asr::mel::Mel::new(128).features(&wave);
     eprintln!("{} frames ({} valid) in {:.3}s", f.frames, f.valid, t0.elapsed().as_secs_f64());
     assert_eq!(f.data.len(), want.len(), "frame count differs: want {}", want.len() / 128);
     let (mut max, mut sum) = (0f32, 0f64);

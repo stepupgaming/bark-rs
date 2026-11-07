@@ -22,7 +22,7 @@ fn main() -> Result<()> {
         }
     };
     let t0 = std::time::Instant::now();
-    let ours = bark::audio::to_model_input(&s, spec.channels as usize, spec.sample_rate)?;
+    let ours = bark_asr::audio::to_model_input(&s, spec.channels as usize, spec.sample_rate)?;
     let secs = t0.elapsed().as_secs_f64();
     if let Some(out) = a.get(2) {
         std::fs::write(out, ours.iter().flat_map(|v| v.to_le_bytes()).collect::<Vec<u8>>())?;
@@ -30,7 +30,7 @@ fn main() -> Result<()> {
     let want: Vec<f32> = std::fs::read(&a[1])?
         .chunks_exact(4)
         .map(|c| f32::from_le_bytes(c.try_into().unwrap()))
-        .skip(bark::model::LEAD_IN)
+        .skip(bark_asr::model::LEAD_IN)
         .collect();
     let n = ours.len().min(want.len());
     let (mut sig, mut diff, mut max) = (0f64, 0f64, 0f32);

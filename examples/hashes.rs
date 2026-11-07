@@ -8,7 +8,7 @@ use sha2::{Digest, Sha256};
 fn main() -> anyhow::Result<()> {
     let path = std::env::args().nth(1).expect("usage: hashes <model.bark>");
     let t0 = std::time::Instant::now();
-    let f = bark::BarkFile::open(&path)?;
+    let f = bark_asr::BarkFile::open(&path)?;
     let all = f.all()?;
     eprintln!("{} tensors decoded in {:.2}s", all.len(), t0.elapsed().as_secs_f64());
     for (name, _, data) in all {

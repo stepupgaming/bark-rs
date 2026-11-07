@@ -1,10 +1,13 @@
 [package]
-name = "bark"
+name = "bark-asr"
 version = "0.1.0"
 edition = "2024"
-license = "MIT OR Apache-2.0"
+license = "(MIT OR Apache-2.0) AND CC-BY-4.0"
 description = "Underdog Bark 3.0 speech to text on ONNX Runtime, straight from model.bark"
 repository = "https://github.com/stepupgaming/bark-rs"
+readme = "README.md"
+keywords = ["speech-to-text", "asr", "parakeet", "onnx", "transcription"]
+categories = ["multimedia::audio", "science"]
 
 [dependencies]
 anyhow = "1.0.104"
