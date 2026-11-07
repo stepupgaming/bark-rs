@@ -28,7 +28,18 @@ Windows desktop CPU, ORT 1.31 (pyke `ort` 2.0.0-rc.15), 67.2 s English clip:
 
 fp32 needs two copies of 2.4 GB, because ORT copies external initializers when it creates the session. The packed graphs avoid that. q8 picks an 8-bit scale per row so that every level lands close to an integer step (weight error about 1e-4). It is faster on desktop, but it isn't exact.
 
-On a phone, the 2-bit kernel speed hasn't been measured yet. That and `accuracy_level` 4 (int8 activations) are the next things to test on a real device.
+With `graphs/` (exact), the desktop transcript is identical to the official model on 13 clips: the 67 s fixture plus twelve 60 s cuts from a podcast, a talk and a game stream.
+
+Galaxy S25 Ultra (SM-S938U, Android 17, 11 GB RAM), same 67.2 s clip, cool phone, screen on:
+
+| graphs | peak RAM | transcribe | load | transcript |
+|---|---|---|---|---|
+| **exact 2-bit** | **1.42 GB** | 14.9 s | 2.9 s | same as official; also on 9 of the 60 s cuts (the run was stopped there) |
+| q8 | 1.97 GB | 13.5 s | 3.6 s | same on this clip |
+| exact, `accuracy_level` 4 | 1.48 GB | 8.5 s | 4.9 s | same on this clip |
+| q8, `accuracy_level` 4 | 1.99 GB | 4.6 s | 3.5 s | same on this clip |
+
+`accuracy_level` 4 quantizes the activations to int8, so ARM's int8 dot-product units do the work. On the phone, q8 with level 4 is 3.2x faster than exact (about 14x real time). It is not exact, though, and its accuracy has only been checked on one clip. A longer phone run heats the phone up and slows it down: a later exact run took 23.7 s for 60 s of audio. Keep phone tests short.
 
 ## Checks
 
@@ -66,7 +77,9 @@ export CC_aarch64_linux_android="$BIN/aarch64-linux-android28-clang.cmd" AR_aarc
 cargo build --release --target aarch64-linux-android --example transcribe
 ```
 
-To try it on a phone: `adb push` the binary, `model.bark`, `graphs/` and a 16 kHz WAV to `/data/local/tmp`, then run it with `adb shell`.
+To try it on a phone: `adb push` the binary, `model.bark`, `graphs/`, a 16 kHz WAV and the NDK's `sysroot/usr/lib/aarch64-linux-android/libc++_shared.so` to `/data/local/tmp/bark`. Run `chmod 755 transcribe` after every push, because a push resets the mode. Then run `LD_LIBRARY_PATH=. ./transcribe model.bark graphs audio.wav` in `adb shell`. Set `MSYS_NO_PATHCONV=1` in Git Bash, or it rewrites the device paths.
+
+In an app, `libc++_shared.so` goes in `jniLibs/arm64-v8a`. For a Tauri 2 app (Catalyzer, for example), add this crate to `src-tauri` and expose `transcribe` as a command; no JNI glue is needed.
 
 ## License
 

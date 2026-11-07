@@ -2,7 +2,7 @@
 //!
 //!     cargo run --release --example transcribe -- model.bark <graphs dir> <audio.wav|wave.f32> [fixture.json]
 //!
-//! A `.f32` file is raw little-endian samples, as `tools/py_fixture.py` writes them.
+//! A `.f32` file is raw little-endian samples with the 0.25 s lead-in, as `tools/py_fixture.py` writes them.
 
 use anyhow::{Result, bail};
 
@@ -54,8 +54,11 @@ fn wav(path: &str) -> Result<Vec<f32>> {
     Ok(s.chunks(ch).map(|f| f.iter().sum::<f32>() / ch as f32).collect())
 }
 
+/// `wave.f32` from tools/py_fixture.py already starts with the lead-in; `transcribe` adds its own.
 fn raw_f32(path: &str) -> Result<Vec<f32>> {
-    Ok(std::fs::read(path)?.chunks_exact(4).map(|c| f32::from_le_bytes(c.try_into().unwrap())).collect())
+    let v: Vec<f32> =
+        std::fs::read(path)?.chunks_exact(4).map(|c| f32::from_le_bytes(c.try_into().unwrap())).collect();
+    Ok(v.get(bark::model::LEAD_IN..).unwrap_or_default().to_vec())
 }
 
 /// Peak working set and peak private bytes of this process (Windows only).
@@ -84,7 +87,11 @@ fn peak() -> Option<(usize, usize)> {
     (ok != 0).then_some((c.peak_ws, c.peak_pagefile))
 }
 
+/// Peak resident set (VmHWM) on Linux and Android; private bytes are not tracked there, so
+/// both numbers are the same.
 #[cfg(not(windows))]
 fn peak() -> Option<(usize, usize)> {
-    None
+    let s = std::fs::read_to_string("/proc/self/status").ok()?;
+    let kb: usize = s.lines().find(|l| l.starts_with("VmHWM:"))?.split_whitespace().nth(1)?.parse().ok()?;
+    Some((kb * 1024, kb * 1024))
 }
