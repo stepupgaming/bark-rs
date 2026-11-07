@@ -20,6 +20,11 @@ use crate::mel::Mel;
 /// Silence put before the audio, as in the evaluated setting (0.25 s).
 pub const LEAD_IN: usize = 4000;
 
+/// Default longest piece read in one pass, in seconds. Against a 276 s script, 10 to 60 s pieces
+/// and one whole pass all differ from the text by the same 3 to 5 words. Longer pieces need more
+/// memory; the exact graphs also pay about 0.85 s per piece on desktop, the int8 graphs don't.
+pub const MAX_PIECE: f64 = 30.0;
+
 pub struct Bark {
     enc: Session,
     dec: Session,
@@ -30,12 +35,45 @@ pub struct Bark {
     layers: usize,
     hidden: usize,
     mel: Mel,
+    max_piece: f64,
     _env: ort::environment::Environment,
 }
 
+/// Seconds per encoder frame: 10 ms mel hop times 8x subsampling.
+pub const FRAME: f64 = 0.08;
+
+/// Punctuation that takes the end time of the token before it (NeMo's TDT timestamp rule, as in
+/// transformers' `ParakeetProcessor`).
+const PUNCT: [&str; 11] = ["?", "'", "\u{a1}", "\u{bf}", "-", ":", ",", "%", "/", ".", "!"];
+
+#[derive(Clone, Debug)]
 pub struct Transcript {
     pub text: String,
+    /// Every emitted token id, in order.
     pub ids: Vec<usize>,
+    /// Text tokens with times; `<unk>` and other special tokens are left out.
+    pub tokens: Vec<Token>,
+    pub words: Vec<Word>,
+}
+
+/// A token and when it was said, in seconds from the start of the audio passed in.
+/// `start` is the encoder frame it was emitted on, `end` adds its predicted TDT duration.
+#[derive(Clone, Debug)]
+pub struct Token {
+    pub id: usize,
+    /// The SentencePiece piece, with `\u{2581}` (a word start) shown as a space.
+    pub text: String,
+    pub start: f64,
+    pub end: f64,
+}
+
+/// A word: from its first token's start to its last token's end. Punctuation joins the word
+/// before it.
+#[derive(Clone, Debug)]
+pub struct Word {
+    pub text: String,
+    pub start: f64,
+    pub end: f64,
 }
 
 impl Bark {
@@ -111,12 +149,65 @@ impl Bark {
             layers: num("layers")?,
             hidden: num("hidden")?,
             mel: Mel::new(128),
+            max_piece: MAX_PIECE,
             _env: env,
         })
     }
 
-    /// `wave`: mono 16 kHz samples.
+    /// Longest piece, in seconds, read in one pass; longer audio is cut at pauses into pieces
+    /// between a third of this and this long. Default [`MAX_PIECE`].
+    pub fn set_max_piece(&mut self, seconds: f64) {
+        self.max_piece = seconds.max(1.0);
+    }
+
+    /// Any rate and channel count: downmixed, resampled to 16 kHz, then [`Bark::transcribe`].
+    pub fn transcribe_pcm(&mut self, interleaved: &[f32], channels: usize, rate: u32) -> Result<Transcript> {
+        let wave = crate::audio::to_model_input(interleaved, channels, rate)?;
+        self.transcribe(&wave)
+    }
+
+    /// `wave`: mono 16 kHz samples, any length. Audio longer than the piece limit is cut at
+    /// pauses ([`crate::audio::segments`]); each piece gets its own 0.25 s lead-in, and times
+    /// are shifted back onto the whole recording.
     pub fn transcribe(&mut self, wave: &[f32]) -> Result<Transcript> {
+        let rate = crate::audio::RATE as f64;
+        let lead = LEAD_IN as f64 / rate;
+        let pieces = crate::audio::segments(wave, self.max_piece, self.max_piece / 3.0);
+        let mut all = Transcript { text: String::new(), ids: Vec::new(), tokens: Vec::new(), words: Vec::new() };
+        let mut texts = Vec::new();
+        let mut decoded = Vec::with_capacity(pieces.len());
+        for r in &pieces {
+            decoded.push(self.decode(&wave[r.clone()])?);
+        }
+        for (r, raw) in pieces.into_iter().zip(decoded) {
+            let offset = r.start as f64 / rate;
+            let ids: Vec<usize> = raw.iter().map(|t| t.0).collect();
+            texts.push(self.detokenize(&ids));
+            all.ids.extend(&ids);
+            for (id, frame, dur) in raw {
+                if self.special(id) {
+                    continue;
+                }
+                let piece = &self.vocab[id];
+                let mut start = (frame as f64 * FRAME - lead).max(0.0) + offset;
+                let mut end = ((frame + dur) as f64 * FRAME - lead).max(0.0) + offset;
+                if PUNCT.contains(&piece.as_str())
+                    && let Some(prev) = all.tokens.last()
+                {
+                    start = prev.end;
+                    end = prev.end;
+                }
+                all.tokens.push(Token { id, text: piece.replace('\u{2581}', " "), start, end });
+            }
+        }
+        all.text = texts.into_iter().filter(|t| !t.is_empty()).collect::<Vec<_>>().join(" ");
+        all.words = words(&all.tokens, &self.vocab);
+        Ok(all)
+    }
+
+    /// One pass over a piece: (token id, encoder frame, predicted duration) per emitted token,
+    /// frames counted from the start of the lead-in.
+    fn decode(&mut self, wave: &[f32]) -> Result<Vec<(usize, usize, usize)>> {
         let mut w = vec![0f32; LEAD_IN];
         w.extend_from_slice(wave);
         let f = self.mel.features(&w);
@@ -136,7 +227,7 @@ impl Bark {
         let mut h = vec![0f32; self.layers * self.hidden];
         let mut c = h.clone();
         let mut dout = self.step(self.blank, &mut h, &mut c)?;
-        let (mut t, mut ids) = (0usize, Vec::new());
+        let (mut t, mut ids) = (0usize, Vec::<(usize, usize, usize)>::new());
         while t < n {
             let enc = &frames[t * dim..(t + 1) * dim];
             let out = self.joint.run(ort::inputs![
@@ -150,12 +241,17 @@ impl Bark {
             if k == self.blank {
                 dur = dur.max(1);
             } else {
-                ids.push(k);
+                ids.push((k, t, dur));
                 dout = self.step(k, &mut h, &mut c)?;
             }
             t += dur;
         }
-        Ok(Transcript { text: self.detokenize(&ids), ids })
+        Ok(ids)
+    }
+
+    /// `<unk>`, `<pad>`, blank and anything past the vocabulary.
+    fn special(&self, id: usize) -> bool {
+        id == 0 || id == 2 || id >= self.vocab.len()
     }
 
     /// One decoder step: projected output, and the new LSTM state in place.
@@ -175,13 +271,32 @@ impl Bark {
     pub fn detokenize(&self, ids: &[usize]) -> String {
         let mut s = String::new();
         for &i in ids {
-            if i == 0 || i == 2 || i >= self.vocab.len() {
+            if self.special(i) {
                 continue;
             }
             s.push_str(&self.vocab[i].replace('\u{2581}', " "));
         }
         s.trim().to_string()
     }
+}
+
+/// NeMo's word grouping for SentencePiece: a piece that starts with `\u{2581}` starts a word,
+/// unless it is punctuation, which joins the word before it.
+fn words(tokens: &[Token], vocab: &[String]) -> Vec<Word> {
+    let mut out: Vec<Word> = Vec::new();
+    for t in tokens {
+        let piece = vocab[t.id].as_str();
+        let bare = piece.trim_start_matches('\u{2581}');
+        let starts = piece.starts_with('\u{2581}') && !PUNCT.contains(&bare);
+        match out.last_mut() {
+            Some(w) if !starts => {
+                w.text.push_str(bare);
+                w.end = t.end;
+            }
+            _ => out.push(Word { text: bare.to_string(), start: t.start, end: t.end }),
+        }
+    }
+    out
 }
 
 fn argmax(x: &[f32]) -> usize {

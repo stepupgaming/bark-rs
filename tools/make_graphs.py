@@ -1,6 +1,6 @@
 """Turns full ONNX exports of Bark 3.0 into weightless graphs plus a manifest.
 
-    python -I tools/make_graphs.py <model dir> <onnx dir> <out dir> [fp32|exact|q8]
+    python -I tools/make_graphs.py <model dir> <onnx dir> <out dir> [fp32|exact|q8|int8]
 
 <onnx dir> holds encoder.onnx, decoder.onnx, joint.onnx and vocab.json as written by the
 export (fp32, opset 17, TorchScript exporter). Every initializer that equals a tensor of
@@ -19,6 +19,8 @@ Every encoder MatMul and 1x1 Conv whose weight is a levels2 tensor (each row hol
          fp32 weights, 2K bits a weight. ops "tern" (B, uint8) and "tern_s" (scales), "term" j.
   q8:    one 8-bit matrix, per-row scale lev_max / k with k <= 127 picked so every level
          lands closest to an integer. ops "q8" and "q8_s".
+  int8:  q8 with accuracy_level 4: ONNX Runtime also quantizes the activations to int8, so
+         ARM int8 dot-product kernels do the work. Fastest on phones, not exact.
 fp32 leaves the graph as exported.
 """
 import hashlib
@@ -36,7 +38,7 @@ from onnx import numpy_helper
 
 model_dir, onnx_dir, out = sys.argv[1:4]
 pack = sys.argv[4] if len(sys.argv) > 4 else "exact"
-assert pack in ("fp32", "exact", "q8"), pack
+assert pack in ("fp32", "exact", "q8", "int8"), pack
 BS = 128  # MatMulNBits block size
 os.makedirs(out, exist_ok=True)
 spec = importlib.util.spec_from_file_location("official_bark", os.path.join(model_dir, "bark_loader.py"))
@@ -113,6 +115,7 @@ def pack_nodes(m, entries):
         outs = []
         for j in terms:
             bits = 2 if pack == "exact" else 8
+            extra = {"accuracy_level": 4} if pack == "int8" else {}
             b, sc = f"{tag}_B{'' if j is None else j}", f"{tag}_S{'' if j is None else j}"
             op = "tern" if pack == "exact" else "q8"
             m.graph.initializer.append(external(b, onnx.TensorProto.UINT8, [rows, nblk, BS * bits // 8]))
@@ -123,7 +126,7 @@ def pack_nodes(m, entries):
                 entries[b]["term"] = entries[sc]["term"] = j
             o = y if len(terms) == 1 else f"{tag}_y{j}"
             nodes.append(helper.make_node("MatMulNBits", [x, b, sc], [o], domain="com.microsoft",
-                                          K=cols, N=rows, bits=bits, block_size=BS))
+                                          K=cols, N=rows, bits=bits, block_size=BS, **extra))
             outs.append(o)
         if len(outs) > 1:
             nodes.append(helper.make_node("Sum", outs, [y]))

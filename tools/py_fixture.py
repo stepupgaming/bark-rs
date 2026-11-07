@@ -4,7 +4,8 @@
 
 out/wave.f32      16 kHz mono input with the 0.25 s lead-in (what the processor sees)
 out/feats.f32     processor features [T, 128]
-out/fixture.json  T, valid frames, reference token ids and transcript
+out/fixture.json  T, valid frames, reference token ids, transcript, and token timestamps from the
+                  processor (seconds from the start of wave.f32, lead-in included)
 """
 import importlib.util
 import json
@@ -37,8 +38,10 @@ f.tofile(os.path.join(out, "feats.f32"))
 
 model = bark.load_model(os.path.join(d, "model.bark"))
 with torch.inference_mode():
-    seq = model.generate(**inp).sequences[0].tolist()
+    gen = model.generate(**inp)
+seq = gen.sequences[0].tolist()
 text = proc.batch_decode([seq], skip_special_tokens=True)[0].strip()
-json.dump({"frames": f.shape[0], "valid": int(inp["attention_mask"].sum()), "ids": seq, "text": text},
-          open(os.path.join(out, "fixture.json"), "w"))
+_, stamps = proc.decode(gen.sequences, durations=gen.durations, skip_special_tokens=True)
+json.dump({"frames": f.shape[0], "valid": int(inp["attention_mask"].sum()), "ids": seq, "text": text,
+           "tokens": stamps[0]}, open(os.path.join(out, "fixture.json"), "w"))
 print(f.shape, text)

@@ -1,0 +1,7391 @@
+{
+ "encoder": {
+  "m.encoder.subsampling.layers.0.weight": {
+   "src": "encoder.subsampling.layers.0.weight",
+   "op": "id",
+   "shape": [
+    256,
+    1,
+    3,
+    3
+   ]
+  },
+  "m.encoder.subsampling.layers.0.bias": {
+   "src": "encoder.subsampling.layers.0.bias",
+   "op": "id",
+   "shape": [
+    256
+   ]
+  },
+  "m.encoder.subsampling.layers.2.weight": {
+   "src": "encoder.subsampling.layers.2.weight",
+   "op": "id",
+   "shape": [
+    256,
+    1,
+    3,
+    3
+   ]
+  },
+  "m.encoder.subsampling.layers.2.bias": {
+   "src": "encoder.subsampling.layers.2.bias",
+   "op": "id",
+   "shape": [
+    256
+   ]
+  },
+  "m.encoder.subsampling.layers.3.weight": {
+   "src": "encoder.subsampling.layers.3.weight",
+   "op": "id",
+   "shape": [
+    256,
+    256,
+    1,
+    1
+   ]
+  },
+  "m.encoder.subsampling.layers.3.bias": {
+   "src": "encoder.subsampling.layers.3.bias",
+   "op": "id",
+   "shape": [
+    256
+   ]
+  },
+  "m.encoder.subsampling.layers.5.weight": {
+   "src": "encoder.subsampling.layers.5.weight",
+   "op": "id",
+   "shape": [
+    256,
+    1,
+    3,
+    3
+   ]
+  },
+  "m.encoder.subsampling.layers.5.bias": {
+   "src": "encoder.subsampling.layers.5.bias",
+   "op": "id",
+   "shape": [
+    256
+   ]
+  },
+  "m.encoder.subsampling.layers.6.weight": {
+   "src": "encoder.subsampling.layers.6.weight",
+   "op": "id",
+   "shape": [
+    256,
+    256,
+    1,
+    1
+   ]
+  },
+  "m.encoder.subsampling.layers.6.bias": {
+   "src": "encoder.subsampling.layers.6.bias",
+   "op": "id",
+   "shape": [
+    256
+   ]
+  },
+  "m.encoder.subsampling.linear.bias": {
+   "src": "encoder.subsampling.linear.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_feed_forward1.weight": {
+   "src": "encoder.layers.0.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_feed_forward1.bias": {
+   "src": "encoder.layers.0.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_self_att.weight": {
+   "src": "encoder.layers.0.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_self_att.bias": {
+   "src": "encoder.layers.0.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_conv.weight": {
+   "src": "encoder.layers.0.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_conv.bias": {
+   "src": "encoder.layers.0.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_feed_forward2.weight": {
+   "src": "encoder.layers.0.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_feed_forward2.bias": {
+   "src": "encoder.layers.0.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_out.weight": {
+   "src": "encoder.layers.0.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.0.norm_out.bias": {
+   "src": "encoder.layers.0.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_feed_forward1.weight": {
+   "src": "encoder.layers.1.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_feed_forward1.bias": {
+   "src": "encoder.layers.1.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_self_att.weight": {
+   "src": "encoder.layers.1.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_self_att.bias": {
+   "src": "encoder.layers.1.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_conv.weight": {
+   "src": "encoder.layers.1.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_conv.bias": {
+   "src": "encoder.layers.1.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_feed_forward2.weight": {
+   "src": "encoder.layers.1.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_feed_forward2.bias": {
+   "src": "encoder.layers.1.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_out.weight": {
+   "src": "encoder.layers.1.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.1.norm_out.bias": {
+   "src": "encoder.layers.1.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_feed_forward1.weight": {
+   "src": "encoder.layers.2.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_feed_forward1.bias": {
+   "src": "encoder.layers.2.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_self_att.weight": {
+   "src": "encoder.layers.2.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_self_att.bias": {
+   "src": "encoder.layers.2.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_conv.weight": {
+   "src": "encoder.layers.2.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_conv.bias": {
+   "src": "encoder.layers.2.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_feed_forward2.weight": {
+   "src": "encoder.layers.2.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_feed_forward2.bias": {
+   "src": "encoder.layers.2.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_out.weight": {
+   "src": "encoder.layers.2.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.2.norm_out.bias": {
+   "src": "encoder.layers.2.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_feed_forward1.weight": {
+   "src": "encoder.layers.3.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_feed_forward1.bias": {
+   "src": "encoder.layers.3.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_self_att.weight": {
+   "src": "encoder.layers.3.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_self_att.bias": {
+   "src": "encoder.layers.3.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_conv.weight": {
+   "src": "encoder.layers.3.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_conv.bias": {
+   "src": "encoder.layers.3.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_feed_forward2.weight": {
+   "src": "encoder.layers.3.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_feed_forward2.bias": {
+   "src": "encoder.layers.3.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_out.weight": {
+   "src": "encoder.layers.3.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.3.norm_out.bias": {
+   "src": "encoder.layers.3.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_feed_forward1.weight": {
+   "src": "encoder.layers.4.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_feed_forward1.bias": {
+   "src": "encoder.layers.4.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_self_att.weight": {
+   "src": "encoder.layers.4.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_self_att.bias": {
+   "src": "encoder.layers.4.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_conv.weight": {
+   "src": "encoder.layers.4.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_conv.bias": {
+   "src": "encoder.layers.4.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_feed_forward2.weight": {
+   "src": "encoder.layers.4.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_feed_forward2.bias": {
+   "src": "encoder.layers.4.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_out.weight": {
+   "src": "encoder.layers.4.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.4.norm_out.bias": {
+   "src": "encoder.layers.4.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_feed_forward1.weight": {
+   "src": "encoder.layers.5.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_feed_forward1.bias": {
+   "src": "encoder.layers.5.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_self_att.weight": {
+   "src": "encoder.layers.5.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_self_att.bias": {
+   "src": "encoder.layers.5.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_conv.weight": {
+   "src": "encoder.layers.5.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_conv.bias": {
+   "src": "encoder.layers.5.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_feed_forward2.weight": {
+   "src": "encoder.layers.5.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_feed_forward2.bias": {
+   "src": "encoder.layers.5.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_out.weight": {
+   "src": "encoder.layers.5.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.5.norm_out.bias": {
+   "src": "encoder.layers.5.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_feed_forward1.weight": {
+   "src": "encoder.layers.6.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_feed_forward1.bias": {
+   "src": "encoder.layers.6.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_self_att.weight": {
+   "src": "encoder.layers.6.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_self_att.bias": {
+   "src": "encoder.layers.6.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_conv.weight": {
+   "src": "encoder.layers.6.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_conv.bias": {
+   "src": "encoder.layers.6.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_feed_forward2.weight": {
+   "src": "encoder.layers.6.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_feed_forward2.bias": {
+   "src": "encoder.layers.6.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_out.weight": {
+   "src": "encoder.layers.6.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.6.norm_out.bias": {
+   "src": "encoder.layers.6.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_feed_forward1.weight": {
+   "src": "encoder.layers.7.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_feed_forward1.bias": {
+   "src": "encoder.layers.7.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_self_att.weight": {
+   "src": "encoder.layers.7.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_self_att.bias": {
+   "src": "encoder.layers.7.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_conv.weight": {
+   "src": "encoder.layers.7.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_conv.bias": {
+   "src": "encoder.layers.7.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_feed_forward2.weight": {
+   "src": "encoder.layers.7.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_feed_forward2.bias": {
+   "src": "encoder.layers.7.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_out.weight": {
+   "src": "encoder.layers.7.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.7.norm_out.bias": {
+   "src": "encoder.layers.7.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_feed_forward1.weight": {
+   "src": "encoder.layers.8.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_feed_forward1.bias": {
+   "src": "encoder.layers.8.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_self_att.weight": {
+   "src": "encoder.layers.8.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_self_att.bias": {
+   "src": "encoder.layers.8.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_conv.weight": {
+   "src": "encoder.layers.8.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_conv.bias": {
+   "src": "encoder.layers.8.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_feed_forward2.weight": {
+   "src": "encoder.layers.8.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_feed_forward2.bias": {
+   "src": "encoder.layers.8.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_out.weight": {
+   "src": "encoder.layers.8.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.8.norm_out.bias": {
+   "src": "encoder.layers.8.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_feed_forward1.weight": {
+   "src": "encoder.layers.9.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_feed_forward1.bias": {
+   "src": "encoder.layers.9.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_self_att.weight": {
+   "src": "encoder.layers.9.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_self_att.bias": {
+   "src": "encoder.layers.9.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_conv.weight": {
+   "src": "encoder.layers.9.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_conv.bias": {
+   "src": "encoder.layers.9.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_feed_forward2.weight": {
+   "src": "encoder.layers.9.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_feed_forward2.bias": {
+   "src": "encoder.layers.9.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_out.weight": {
+   "src": "encoder.layers.9.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.9.norm_out.bias": {
+   "src": "encoder.layers.9.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_feed_forward1.weight": {
+   "src": "encoder.layers.10.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_feed_forward1.bias": {
+   "src": "encoder.layers.10.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_self_att.weight": {
+   "src": "encoder.layers.10.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_self_att.bias": {
+   "src": "encoder.layers.10.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_conv.weight": {
+   "src": "encoder.layers.10.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_conv.bias": {
+   "src": "encoder.layers.10.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_feed_forward2.weight": {
+   "src": "encoder.layers.10.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_feed_forward2.bias": {
+   "src": "encoder.layers.10.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_out.weight": {
+   "src": "encoder.layers.10.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.10.norm_out.bias": {
+   "src": "encoder.layers.10.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_feed_forward1.weight": {
+   "src": "encoder.layers.11.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_feed_forward1.bias": {
+   "src": "encoder.layers.11.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_self_att.weight": {
+   "src": "encoder.layers.11.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_self_att.bias": {
+   "src": "encoder.layers.11.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_conv.weight": {
+   "src": "encoder.layers.11.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_conv.bias": {
+   "src": "encoder.layers.11.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_feed_forward2.weight": {
+   "src": "encoder.layers.11.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_feed_forward2.bias": {
+   "src": "encoder.layers.11.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_out.weight": {
+   "src": "encoder.layers.11.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.11.norm_out.bias": {
+   "src": "encoder.layers.11.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_feed_forward1.weight": {
+   "src": "encoder.layers.12.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_feed_forward1.bias": {
+   "src": "encoder.layers.12.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_self_att.weight": {
+   "src": "encoder.layers.12.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_self_att.bias": {
+   "src": "encoder.layers.12.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_conv.weight": {
+   "src": "encoder.layers.12.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_conv.bias": {
+   "src": "encoder.layers.12.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_feed_forward2.weight": {
+   "src": "encoder.layers.12.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_feed_forward2.bias": {
+   "src": "encoder.layers.12.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_out.weight": {
+   "src": "encoder.layers.12.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.12.norm_out.bias": {
+   "src": "encoder.layers.12.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_feed_forward1.weight": {
+   "src": "encoder.layers.13.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_feed_forward1.bias": {
+   "src": "encoder.layers.13.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_self_att.weight": {
+   "src": "encoder.layers.13.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_self_att.bias": {
+   "src": "encoder.layers.13.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_conv.weight": {
+   "src": "encoder.layers.13.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_conv.bias": {
+   "src": "encoder.layers.13.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_feed_forward2.weight": {
+   "src": "encoder.layers.13.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_feed_forward2.bias": {
+   "src": "encoder.layers.13.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_out.weight": {
+   "src": "encoder.layers.13.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.13.norm_out.bias": {
+   "src": "encoder.layers.13.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_feed_forward1.weight": {
+   "src": "encoder.layers.14.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_feed_forward1.bias": {
+   "src": "encoder.layers.14.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_self_att.weight": {
+   "src": "encoder.layers.14.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_self_att.bias": {
+   "src": "encoder.layers.14.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_conv.weight": {
+   "src": "encoder.layers.14.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_conv.bias": {
+   "src": "encoder.layers.14.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_feed_forward2.weight": {
+   "src": "encoder.layers.14.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_feed_forward2.bias": {
+   "src": "encoder.layers.14.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_out.weight": {
+   "src": "encoder.layers.14.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.14.norm_out.bias": {
+   "src": "encoder.layers.14.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_feed_forward1.weight": {
+   "src": "encoder.layers.15.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_feed_forward1.bias": {
+   "src": "encoder.layers.15.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_self_att.weight": {
+   "src": "encoder.layers.15.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_self_att.bias": {
+   "src": "encoder.layers.15.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_conv.weight": {
+   "src": "encoder.layers.15.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_conv.bias": {
+   "src": "encoder.layers.15.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_feed_forward2.weight": {
+   "src": "encoder.layers.15.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_feed_forward2.bias": {
+   "src": "encoder.layers.15.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_out.weight": {
+   "src": "encoder.layers.15.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.15.norm_out.bias": {
+   "src": "encoder.layers.15.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_feed_forward1.weight": {
+   "src": "encoder.layers.16.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_feed_forward1.bias": {
+   "src": "encoder.layers.16.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_self_att.weight": {
+   "src": "encoder.layers.16.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_self_att.bias": {
+   "src": "encoder.layers.16.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_conv.weight": {
+   "src": "encoder.layers.16.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_conv.bias": {
+   "src": "encoder.layers.16.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_feed_forward2.weight": {
+   "src": "encoder.layers.16.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_feed_forward2.bias": {
+   "src": "encoder.layers.16.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_out.weight": {
+   "src": "encoder.layers.16.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.16.norm_out.bias": {
+   "src": "encoder.layers.16.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_feed_forward1.weight": {
+   "src": "encoder.layers.17.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_feed_forward1.bias": {
+   "src": "encoder.layers.17.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_self_att.weight": {
+   "src": "encoder.layers.17.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_self_att.bias": {
+   "src": "encoder.layers.17.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_conv.weight": {
+   "src": "encoder.layers.17.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_conv.bias": {
+   "src": "encoder.layers.17.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_feed_forward2.weight": {
+   "src": "encoder.layers.17.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_feed_forward2.bias": {
+   "src": "encoder.layers.17.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_out.weight": {
+   "src": "encoder.layers.17.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.17.norm_out.bias": {
+   "src": "encoder.layers.17.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_feed_forward1.weight": {
+   "src": "encoder.layers.18.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_feed_forward1.bias": {
+   "src": "encoder.layers.18.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_self_att.weight": {
+   "src": "encoder.layers.18.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_self_att.bias": {
+   "src": "encoder.layers.18.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_conv.weight": {
+   "src": "encoder.layers.18.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_conv.bias": {
+   "src": "encoder.layers.18.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_feed_forward2.weight": {
+   "src": "encoder.layers.18.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_feed_forward2.bias": {
+   "src": "encoder.layers.18.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_out.weight": {
+   "src": "encoder.layers.18.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.18.norm_out.bias": {
+   "src": "encoder.layers.18.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_feed_forward1.weight": {
+   "src": "encoder.layers.19.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_feed_forward1.bias": {
+   "src": "encoder.layers.19.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_self_att.weight": {
+   "src": "encoder.layers.19.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_self_att.bias": {
+   "src": "encoder.layers.19.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_conv.weight": {
+   "src": "encoder.layers.19.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_conv.bias": {
+   "src": "encoder.layers.19.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_feed_forward2.weight": {
+   "src": "encoder.layers.19.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_feed_forward2.bias": {
+   "src": "encoder.layers.19.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_out.weight": {
+   "src": "encoder.layers.19.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.19.norm_out.bias": {
+   "src": "encoder.layers.19.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_feed_forward1.weight": {
+   "src": "encoder.layers.20.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_feed_forward1.bias": {
+   "src": "encoder.layers.20.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_self_att.weight": {
+   "src": "encoder.layers.20.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_self_att.bias": {
+   "src": "encoder.layers.20.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_conv.weight": {
+   "src": "encoder.layers.20.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_conv.bias": {
+   "src": "encoder.layers.20.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_feed_forward2.weight": {
+   "src": "encoder.layers.20.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_feed_forward2.bias": {
+   "src": "encoder.layers.20.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_out.weight": {
+   "src": "encoder.layers.20.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.20.norm_out.bias": {
+   "src": "encoder.layers.20.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_feed_forward1.weight": {
+   "src": "encoder.layers.21.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_feed_forward1.bias": {
+   "src": "encoder.layers.21.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_self_att.weight": {
+   "src": "encoder.layers.21.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_self_att.bias": {
+   "src": "encoder.layers.21.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_conv.weight": {
+   "src": "encoder.layers.21.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_conv.bias": {
+   "src": "encoder.layers.21.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_feed_forward2.weight": {
+   "src": "encoder.layers.21.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_feed_forward2.bias": {
+   "src": "encoder.layers.21.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_out.weight": {
+   "src": "encoder.layers.21.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.21.norm_out.bias": {
+   "src": "encoder.layers.21.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_feed_forward1.weight": {
+   "src": "encoder.layers.22.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_feed_forward1.bias": {
+   "src": "encoder.layers.22.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_self_att.weight": {
+   "src": "encoder.layers.22.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_self_att.bias": {
+   "src": "encoder.layers.22.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_conv.weight": {
+   "src": "encoder.layers.22.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_conv.bias": {
+   "src": "encoder.layers.22.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_feed_forward2.weight": {
+   "src": "encoder.layers.22.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_feed_forward2.bias": {
+   "src": "encoder.layers.22.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_out.weight": {
+   "src": "encoder.layers.22.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.22.norm_out.bias": {
+   "src": "encoder.layers.22.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_feed_forward1.weight": {
+   "src": "encoder.layers.23.norm_feed_forward1.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_feed_forward1.bias": {
+   "src": "encoder.layers.23.norm_feed_forward1.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_self_att.weight": {
+   "src": "encoder.layers.23.norm_self_att.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_self_att.bias": {
+   "src": "encoder.layers.23.norm_self_att.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_conv.weight": {
+   "src": "encoder.layers.23.norm_conv.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_conv.bias": {
+   "src": "encoder.layers.23.norm_conv.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_feed_forward2.weight": {
+   "src": "encoder.layers.23.norm_feed_forward2.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_feed_forward2.bias": {
+   "src": "encoder.layers.23.norm_feed_forward2.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_out.weight": {
+   "src": "encoder.layers.23.norm_out.weight",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder.layers.23.norm_out.bias": {
+   "src": "encoder.layers.23.norm_out.bias",
+   "op": "id",
+   "shape": [
+    1024
+   ]
+  },
+  "m.encoder_projector.bias": {
+   "src": "encoder_projector.bias",
+   "op": "id",
+   "shape": [
+    640
+   ]
+  },
+  "onnx::MatMul_5955": {
+   "src": "encoder.subsampling.linear.weight",
+   "op": "t",
+   "shape": [
+    4096,
+    1024
+   ]
+  },
+  "onnx::Add_5973": {
+   "src": "encoder.layers.0.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_5974": {
+   "src": "encoder.layers.0.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6011": {
+   "src": "encoder.layers.1.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6012": {
+   "src": "encoder.layers.1.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6049": {
+   "src": "encoder.layers.2.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6050": {
+   "src": "encoder.layers.2.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6087": {
+   "src": "encoder.layers.3.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6088": {
+   "src": "encoder.layers.3.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6125": {
+   "src": "encoder.layers.4.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6126": {
+   "src": "encoder.layers.4.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6163": {
+   "src": "encoder.layers.5.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6164": {
+   "src": "encoder.layers.5.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6201": {
+   "src": "encoder.layers.6.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6202": {
+   "src": "encoder.layers.6.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6239": {
+   "src": "encoder.layers.7.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6240": {
+   "src": "encoder.layers.7.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6277": {
+   "src": "encoder.layers.8.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6278": {
+   "src": "encoder.layers.8.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6315": {
+   "src": "encoder.layers.9.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6316": {
+   "src": "encoder.layers.9.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6353": {
+   "src": "encoder.layers.10.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6354": {
+   "src": "encoder.layers.10.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6391": {
+   "src": "encoder.layers.11.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6392": {
+   "src": "encoder.layers.11.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6429": {
+   "src": "encoder.layers.12.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6430": {
+   "src": "encoder.layers.12.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6467": {
+   "src": "encoder.layers.13.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6468": {
+   "src": "encoder.layers.13.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6505": {
+   "src": "encoder.layers.14.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6506": {
+   "src": "encoder.layers.14.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6543": {
+   "src": "encoder.layers.15.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6544": {
+   "src": "encoder.layers.15.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6581": {
+   "src": "encoder.layers.16.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6582": {
+   "src": "encoder.layers.16.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6619": {
+   "src": "encoder.layers.17.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6620": {
+   "src": "encoder.layers.17.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6657": {
+   "src": "encoder.layers.18.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6658": {
+   "src": "encoder.layers.18.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6695": {
+   "src": "encoder.layers.19.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6696": {
+   "src": "encoder.layers.19.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6733": {
+   "src": "encoder.layers.20.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6734": {
+   "src": "encoder.layers.20.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6771": {
+   "src": "encoder.layers.21.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6772": {
+   "src": "encoder.layers.21.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6809": {
+   "src": "encoder.layers.22.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6810": {
+   "src": "encoder.layers.22.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6847": {
+   "src": "encoder.layers.23.self_attn.bias_u",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::Add_6848": {
+   "src": "encoder.layers.23.self_attn.bias_v",
+   "op": "id",
+   "shape": [
+    1,
+    8,
+    1,
+    128
+   ]
+  },
+  "onnx::MatMul_6874": {
+   "src": "encoder_projector.weight",
+   "op": "t",
+   "shape": [
+    1024,
+    640
+   ]
+  },
+  "onnx::MatMul_5962_B": {
+   "src": "encoder.layers.0.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5962_S": {
+   "src": "encoder.layers.0.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5963_B": {
+   "src": "encoder.layers.0.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_5963_S": {
+   "src": "encoder.layers.0.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_5964_B": {
+   "src": "encoder.layers.0.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5964_S": {
+   "src": "encoder.layers.0.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5971_B": {
+   "src": "encoder.layers.0.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5971_S": {
+   "src": "encoder.layers.0.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5972_B": {
+   "src": "encoder.layers.0.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5972_S": {
+   "src": "encoder.layers.0.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5975_B": {
+   "src": "encoder.layers.0.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5975_S": {
+   "src": "encoder.layers.0.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5997_B": {
+   "src": "encoder.layers.0.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5997_S": {
+   "src": "encoder.layers.0.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.0.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.0.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.0.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.0.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.0.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.0.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.0.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.0.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5998_B": {
+   "src": "encoder.layers.0.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5998_S": {
+   "src": "encoder.layers.0.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_5999_B": {
+   "src": "encoder.layers.0.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_5999_S": {
+   "src": "encoder.layers.0.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6000_B": {
+   "src": "encoder.layers.1.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6000_S": {
+   "src": "encoder.layers.1.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6001_B": {
+   "src": "encoder.layers.1.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6001_S": {
+   "src": "encoder.layers.1.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6002_B": {
+   "src": "encoder.layers.1.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6002_S": {
+   "src": "encoder.layers.1.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6009_B": {
+   "src": "encoder.layers.1.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6009_S": {
+   "src": "encoder.layers.1.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6010_B": {
+   "src": "encoder.layers.1.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6010_S": {
+   "src": "encoder.layers.1.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6013_B": {
+   "src": "encoder.layers.1.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6013_S": {
+   "src": "encoder.layers.1.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6035_B": {
+   "src": "encoder.layers.1.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6035_S": {
+   "src": "encoder.layers.1.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.1.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.1.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.1.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.1.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.1.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.1.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.1.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.1.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6036_B": {
+   "src": "encoder.layers.1.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6036_S": {
+   "src": "encoder.layers.1.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6037_B": {
+   "src": "encoder.layers.1.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6037_S": {
+   "src": "encoder.layers.1.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6038_B": {
+   "src": "encoder.layers.2.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6038_S": {
+   "src": "encoder.layers.2.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6039_B": {
+   "src": "encoder.layers.2.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6039_S": {
+   "src": "encoder.layers.2.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6040_B": {
+   "src": "encoder.layers.2.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6040_S": {
+   "src": "encoder.layers.2.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6047_B": {
+   "src": "encoder.layers.2.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6047_S": {
+   "src": "encoder.layers.2.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6048_B": {
+   "src": "encoder.layers.2.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6048_S": {
+   "src": "encoder.layers.2.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6051_B": {
+   "src": "encoder.layers.2.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6051_S": {
+   "src": "encoder.layers.2.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6073_B": {
+   "src": "encoder.layers.2.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6073_S": {
+   "src": "encoder.layers.2.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.2.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.2.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.2.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.2.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.2.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.2.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.2.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.2.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6074_B": {
+   "src": "encoder.layers.2.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6074_S": {
+   "src": "encoder.layers.2.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6075_B": {
+   "src": "encoder.layers.2.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6075_S": {
+   "src": "encoder.layers.2.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6076_B": {
+   "src": "encoder.layers.3.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6076_S": {
+   "src": "encoder.layers.3.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6077_B": {
+   "src": "encoder.layers.3.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6077_S": {
+   "src": "encoder.layers.3.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6078_B": {
+   "src": "encoder.layers.3.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6078_S": {
+   "src": "encoder.layers.3.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6085_B": {
+   "src": "encoder.layers.3.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6085_S": {
+   "src": "encoder.layers.3.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6086_B": {
+   "src": "encoder.layers.3.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6086_S": {
+   "src": "encoder.layers.3.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6089_B": {
+   "src": "encoder.layers.3.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6089_S": {
+   "src": "encoder.layers.3.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6111_B": {
+   "src": "encoder.layers.3.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6111_S": {
+   "src": "encoder.layers.3.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.3.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.3.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.3.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.3.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.3.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.3.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.3.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.3.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6112_B": {
+   "src": "encoder.layers.3.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6112_S": {
+   "src": "encoder.layers.3.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6113_B": {
+   "src": "encoder.layers.3.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6113_S": {
+   "src": "encoder.layers.3.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6114_B": {
+   "src": "encoder.layers.4.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6114_S": {
+   "src": "encoder.layers.4.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6115_B": {
+   "src": "encoder.layers.4.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6115_S": {
+   "src": "encoder.layers.4.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6116_B": {
+   "src": "encoder.layers.4.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6116_S": {
+   "src": "encoder.layers.4.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6123_B": {
+   "src": "encoder.layers.4.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6123_S": {
+   "src": "encoder.layers.4.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6124_B": {
+   "src": "encoder.layers.4.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6124_S": {
+   "src": "encoder.layers.4.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6127_B": {
+   "src": "encoder.layers.4.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6127_S": {
+   "src": "encoder.layers.4.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6149_B": {
+   "src": "encoder.layers.4.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6149_S": {
+   "src": "encoder.layers.4.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.4.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.4.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.4.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.4.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.4.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.4.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.4.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.4.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6150_B": {
+   "src": "encoder.layers.4.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6150_S": {
+   "src": "encoder.layers.4.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6151_B": {
+   "src": "encoder.layers.4.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6151_S": {
+   "src": "encoder.layers.4.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6152_B": {
+   "src": "encoder.layers.5.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6152_S": {
+   "src": "encoder.layers.5.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6153_B": {
+   "src": "encoder.layers.5.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6153_S": {
+   "src": "encoder.layers.5.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6154_B": {
+   "src": "encoder.layers.5.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6154_S": {
+   "src": "encoder.layers.5.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6161_B": {
+   "src": "encoder.layers.5.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6161_S": {
+   "src": "encoder.layers.5.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6162_B": {
+   "src": "encoder.layers.5.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6162_S": {
+   "src": "encoder.layers.5.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6165_B": {
+   "src": "encoder.layers.5.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6165_S": {
+   "src": "encoder.layers.5.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6187_B": {
+   "src": "encoder.layers.5.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6187_S": {
+   "src": "encoder.layers.5.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.5.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.5.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.5.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.5.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.5.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.5.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.5.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.5.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6188_B": {
+   "src": "encoder.layers.5.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6188_S": {
+   "src": "encoder.layers.5.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6189_B": {
+   "src": "encoder.layers.5.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6189_S": {
+   "src": "encoder.layers.5.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6190_B": {
+   "src": "encoder.layers.6.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6190_S": {
+   "src": "encoder.layers.6.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6191_B": {
+   "src": "encoder.layers.6.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6191_S": {
+   "src": "encoder.layers.6.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6192_B": {
+   "src": "encoder.layers.6.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6192_S": {
+   "src": "encoder.layers.6.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6199_B": {
+   "src": "encoder.layers.6.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6199_S": {
+   "src": "encoder.layers.6.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6200_B": {
+   "src": "encoder.layers.6.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6200_S": {
+   "src": "encoder.layers.6.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6203_B": {
+   "src": "encoder.layers.6.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6203_S": {
+   "src": "encoder.layers.6.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6225_B": {
+   "src": "encoder.layers.6.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6225_S": {
+   "src": "encoder.layers.6.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.6.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.6.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.6.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.6.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.6.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.6.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.6.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.6.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6226_B": {
+   "src": "encoder.layers.6.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6226_S": {
+   "src": "encoder.layers.6.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6227_B": {
+   "src": "encoder.layers.6.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6227_S": {
+   "src": "encoder.layers.6.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6228_B": {
+   "src": "encoder.layers.7.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6228_S": {
+   "src": "encoder.layers.7.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6229_B": {
+   "src": "encoder.layers.7.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6229_S": {
+   "src": "encoder.layers.7.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6230_B": {
+   "src": "encoder.layers.7.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6230_S": {
+   "src": "encoder.layers.7.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6237_B": {
+   "src": "encoder.layers.7.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6237_S": {
+   "src": "encoder.layers.7.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6238_B": {
+   "src": "encoder.layers.7.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6238_S": {
+   "src": "encoder.layers.7.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6241_B": {
+   "src": "encoder.layers.7.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6241_S": {
+   "src": "encoder.layers.7.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6263_B": {
+   "src": "encoder.layers.7.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6263_S": {
+   "src": "encoder.layers.7.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.7.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.7.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.7.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.7.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.7.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.7.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.7.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.7.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6264_B": {
+   "src": "encoder.layers.7.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6264_S": {
+   "src": "encoder.layers.7.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6265_B": {
+   "src": "encoder.layers.7.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6265_S": {
+   "src": "encoder.layers.7.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6266_B": {
+   "src": "encoder.layers.8.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6266_S": {
+   "src": "encoder.layers.8.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6267_B": {
+   "src": "encoder.layers.8.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6267_S": {
+   "src": "encoder.layers.8.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6268_B": {
+   "src": "encoder.layers.8.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6268_S": {
+   "src": "encoder.layers.8.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6275_B": {
+   "src": "encoder.layers.8.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6275_S": {
+   "src": "encoder.layers.8.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6276_B": {
+   "src": "encoder.layers.8.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6276_S": {
+   "src": "encoder.layers.8.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6279_B": {
+   "src": "encoder.layers.8.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6279_S": {
+   "src": "encoder.layers.8.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6301_B": {
+   "src": "encoder.layers.8.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6301_S": {
+   "src": "encoder.layers.8.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.8.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.8.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.8.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.8.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.8.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.8.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.8.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.8.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6302_B": {
+   "src": "encoder.layers.8.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6302_S": {
+   "src": "encoder.layers.8.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6303_B": {
+   "src": "encoder.layers.8.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6303_S": {
+   "src": "encoder.layers.8.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6304_B": {
+   "src": "encoder.layers.9.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6304_S": {
+   "src": "encoder.layers.9.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6305_B": {
+   "src": "encoder.layers.9.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6305_S": {
+   "src": "encoder.layers.9.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6306_B": {
+   "src": "encoder.layers.9.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6306_S": {
+   "src": "encoder.layers.9.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6313_B": {
+   "src": "encoder.layers.9.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6313_S": {
+   "src": "encoder.layers.9.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6314_B": {
+   "src": "encoder.layers.9.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6314_S": {
+   "src": "encoder.layers.9.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6317_B": {
+   "src": "encoder.layers.9.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6317_S": {
+   "src": "encoder.layers.9.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6339_B": {
+   "src": "encoder.layers.9.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6339_S": {
+   "src": "encoder.layers.9.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.9.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.9.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.9.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.9.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.9.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.9.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.9.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.9.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6340_B": {
+   "src": "encoder.layers.9.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6340_S": {
+   "src": "encoder.layers.9.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6341_B": {
+   "src": "encoder.layers.9.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6341_S": {
+   "src": "encoder.layers.9.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6342_B": {
+   "src": "encoder.layers.10.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6342_S": {
+   "src": "encoder.layers.10.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6343_B": {
+   "src": "encoder.layers.10.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6343_S": {
+   "src": "encoder.layers.10.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6344_B": {
+   "src": "encoder.layers.10.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6344_S": {
+   "src": "encoder.layers.10.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6351_B": {
+   "src": "encoder.layers.10.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6351_S": {
+   "src": "encoder.layers.10.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6352_B": {
+   "src": "encoder.layers.10.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6352_S": {
+   "src": "encoder.layers.10.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6355_B": {
+   "src": "encoder.layers.10.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6355_S": {
+   "src": "encoder.layers.10.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6377_B": {
+   "src": "encoder.layers.10.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6377_S": {
+   "src": "encoder.layers.10.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.10.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.10.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.10.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.10.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.10.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.10.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.10.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.10.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6378_B": {
+   "src": "encoder.layers.10.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6378_S": {
+   "src": "encoder.layers.10.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6379_B": {
+   "src": "encoder.layers.10.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6379_S": {
+   "src": "encoder.layers.10.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6380_B": {
+   "src": "encoder.layers.11.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6380_S": {
+   "src": "encoder.layers.11.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6381_B": {
+   "src": "encoder.layers.11.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6381_S": {
+   "src": "encoder.layers.11.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6382_B": {
+   "src": "encoder.layers.11.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6382_S": {
+   "src": "encoder.layers.11.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6389_B": {
+   "src": "encoder.layers.11.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6389_S": {
+   "src": "encoder.layers.11.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6390_B": {
+   "src": "encoder.layers.11.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6390_S": {
+   "src": "encoder.layers.11.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6393_B": {
+   "src": "encoder.layers.11.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6393_S": {
+   "src": "encoder.layers.11.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6415_B": {
+   "src": "encoder.layers.11.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6415_S": {
+   "src": "encoder.layers.11.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.11.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.11.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.11.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.11.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.11.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.11.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.11.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.11.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6416_B": {
+   "src": "encoder.layers.11.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6416_S": {
+   "src": "encoder.layers.11.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6417_B": {
+   "src": "encoder.layers.11.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6417_S": {
+   "src": "encoder.layers.11.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6418_B": {
+   "src": "encoder.layers.12.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6418_S": {
+   "src": "encoder.layers.12.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6419_B": {
+   "src": "encoder.layers.12.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6419_S": {
+   "src": "encoder.layers.12.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6420_B": {
+   "src": "encoder.layers.12.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6420_S": {
+   "src": "encoder.layers.12.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6427_B": {
+   "src": "encoder.layers.12.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6427_S": {
+   "src": "encoder.layers.12.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6428_B": {
+   "src": "encoder.layers.12.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6428_S": {
+   "src": "encoder.layers.12.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6431_B": {
+   "src": "encoder.layers.12.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6431_S": {
+   "src": "encoder.layers.12.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6453_B": {
+   "src": "encoder.layers.12.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6453_S": {
+   "src": "encoder.layers.12.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.12.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.12.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.12.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.12.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.12.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.12.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.12.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.12.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6454_B": {
+   "src": "encoder.layers.12.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6454_S": {
+   "src": "encoder.layers.12.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6455_B": {
+   "src": "encoder.layers.12.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6455_S": {
+   "src": "encoder.layers.12.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6456_B": {
+   "src": "encoder.layers.13.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6456_S": {
+   "src": "encoder.layers.13.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6457_B": {
+   "src": "encoder.layers.13.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6457_S": {
+   "src": "encoder.layers.13.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6458_B": {
+   "src": "encoder.layers.13.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6458_S": {
+   "src": "encoder.layers.13.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6465_B": {
+   "src": "encoder.layers.13.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6465_S": {
+   "src": "encoder.layers.13.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6466_B": {
+   "src": "encoder.layers.13.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6466_S": {
+   "src": "encoder.layers.13.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6469_B": {
+   "src": "encoder.layers.13.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6469_S": {
+   "src": "encoder.layers.13.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6491_B": {
+   "src": "encoder.layers.13.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6491_S": {
+   "src": "encoder.layers.13.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.13.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.13.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.13.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.13.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.13.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.13.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.13.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.13.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6492_B": {
+   "src": "encoder.layers.13.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6492_S": {
+   "src": "encoder.layers.13.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6493_B": {
+   "src": "encoder.layers.13.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6493_S": {
+   "src": "encoder.layers.13.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6494_B": {
+   "src": "encoder.layers.14.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6494_S": {
+   "src": "encoder.layers.14.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6495_B": {
+   "src": "encoder.layers.14.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6495_S": {
+   "src": "encoder.layers.14.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6496_B": {
+   "src": "encoder.layers.14.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6496_S": {
+   "src": "encoder.layers.14.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6503_B": {
+   "src": "encoder.layers.14.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6503_S": {
+   "src": "encoder.layers.14.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6504_B": {
+   "src": "encoder.layers.14.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6504_S": {
+   "src": "encoder.layers.14.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6507_B": {
+   "src": "encoder.layers.14.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6507_S": {
+   "src": "encoder.layers.14.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6529_B": {
+   "src": "encoder.layers.14.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6529_S": {
+   "src": "encoder.layers.14.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.14.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.14.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.14.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.14.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.14.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.14.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.14.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.14.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6530_B": {
+   "src": "encoder.layers.14.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6530_S": {
+   "src": "encoder.layers.14.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6531_B": {
+   "src": "encoder.layers.14.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6531_S": {
+   "src": "encoder.layers.14.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6532_B": {
+   "src": "encoder.layers.15.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6532_S": {
+   "src": "encoder.layers.15.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6533_B": {
+   "src": "encoder.layers.15.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6533_S": {
+   "src": "encoder.layers.15.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6534_B": {
+   "src": "encoder.layers.15.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6534_S": {
+   "src": "encoder.layers.15.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6541_B": {
+   "src": "encoder.layers.15.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6541_S": {
+   "src": "encoder.layers.15.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6542_B": {
+   "src": "encoder.layers.15.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6542_S": {
+   "src": "encoder.layers.15.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6545_B": {
+   "src": "encoder.layers.15.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6545_S": {
+   "src": "encoder.layers.15.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6567_B": {
+   "src": "encoder.layers.15.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6567_S": {
+   "src": "encoder.layers.15.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.15.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.15.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.15.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.15.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.15.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.15.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.15.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.15.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6568_B": {
+   "src": "encoder.layers.15.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6568_S": {
+   "src": "encoder.layers.15.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6569_B": {
+   "src": "encoder.layers.15.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6569_S": {
+   "src": "encoder.layers.15.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6570_B": {
+   "src": "encoder.layers.16.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6570_S": {
+   "src": "encoder.layers.16.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6571_B": {
+   "src": "encoder.layers.16.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6571_S": {
+   "src": "encoder.layers.16.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6572_B": {
+   "src": "encoder.layers.16.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6572_S": {
+   "src": "encoder.layers.16.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6579_B": {
+   "src": "encoder.layers.16.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6579_S": {
+   "src": "encoder.layers.16.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6580_B": {
+   "src": "encoder.layers.16.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6580_S": {
+   "src": "encoder.layers.16.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6583_B": {
+   "src": "encoder.layers.16.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6583_S": {
+   "src": "encoder.layers.16.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6605_B": {
+   "src": "encoder.layers.16.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6605_S": {
+   "src": "encoder.layers.16.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.16.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.16.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.16.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.16.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.16.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.16.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.16.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.16.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6606_B": {
+   "src": "encoder.layers.16.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6606_S": {
+   "src": "encoder.layers.16.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6607_B": {
+   "src": "encoder.layers.16.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6607_S": {
+   "src": "encoder.layers.16.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6608_B": {
+   "src": "encoder.layers.17.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6608_S": {
+   "src": "encoder.layers.17.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6609_B": {
+   "src": "encoder.layers.17.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6609_S": {
+   "src": "encoder.layers.17.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6610_B": {
+   "src": "encoder.layers.17.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6610_S": {
+   "src": "encoder.layers.17.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6617_B": {
+   "src": "encoder.layers.17.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6617_S": {
+   "src": "encoder.layers.17.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6618_B": {
+   "src": "encoder.layers.17.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6618_S": {
+   "src": "encoder.layers.17.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6621_B": {
+   "src": "encoder.layers.17.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6621_S": {
+   "src": "encoder.layers.17.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6643_B": {
+   "src": "encoder.layers.17.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6643_S": {
+   "src": "encoder.layers.17.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.17.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.17.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.17.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.17.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.17.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.17.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.17.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.17.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6644_B": {
+   "src": "encoder.layers.17.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6644_S": {
+   "src": "encoder.layers.17.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6645_B": {
+   "src": "encoder.layers.17.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6645_S": {
+   "src": "encoder.layers.17.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6646_B": {
+   "src": "encoder.layers.18.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6646_S": {
+   "src": "encoder.layers.18.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6647_B": {
+   "src": "encoder.layers.18.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6647_S": {
+   "src": "encoder.layers.18.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6648_B": {
+   "src": "encoder.layers.18.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6648_S": {
+   "src": "encoder.layers.18.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6655_B": {
+   "src": "encoder.layers.18.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6655_S": {
+   "src": "encoder.layers.18.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6656_B": {
+   "src": "encoder.layers.18.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6656_S": {
+   "src": "encoder.layers.18.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6659_B": {
+   "src": "encoder.layers.18.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6659_S": {
+   "src": "encoder.layers.18.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6681_B": {
+   "src": "encoder.layers.18.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6681_S": {
+   "src": "encoder.layers.18.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.18.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.18.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.18.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.18.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.18.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.18.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.18.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.18.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6682_B": {
+   "src": "encoder.layers.18.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6682_S": {
+   "src": "encoder.layers.18.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6683_B": {
+   "src": "encoder.layers.18.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6683_S": {
+   "src": "encoder.layers.18.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6684_B": {
+   "src": "encoder.layers.19.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6684_S": {
+   "src": "encoder.layers.19.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6685_B": {
+   "src": "encoder.layers.19.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6685_S": {
+   "src": "encoder.layers.19.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6686_B": {
+   "src": "encoder.layers.19.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6686_S": {
+   "src": "encoder.layers.19.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6693_B": {
+   "src": "encoder.layers.19.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6693_S": {
+   "src": "encoder.layers.19.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6694_B": {
+   "src": "encoder.layers.19.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6694_S": {
+   "src": "encoder.layers.19.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6697_B": {
+   "src": "encoder.layers.19.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6697_S": {
+   "src": "encoder.layers.19.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6719_B": {
+   "src": "encoder.layers.19.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6719_S": {
+   "src": "encoder.layers.19.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.19.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.19.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.19.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.19.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.19.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.19.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.19.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.19.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6720_B": {
+   "src": "encoder.layers.19.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6720_S": {
+   "src": "encoder.layers.19.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6721_B": {
+   "src": "encoder.layers.19.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6721_S": {
+   "src": "encoder.layers.19.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6722_B": {
+   "src": "encoder.layers.20.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6722_S": {
+   "src": "encoder.layers.20.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6723_B": {
+   "src": "encoder.layers.20.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6723_S": {
+   "src": "encoder.layers.20.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6724_B": {
+   "src": "encoder.layers.20.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6724_S": {
+   "src": "encoder.layers.20.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6731_B": {
+   "src": "encoder.layers.20.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6731_S": {
+   "src": "encoder.layers.20.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6732_B": {
+   "src": "encoder.layers.20.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6732_S": {
+   "src": "encoder.layers.20.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6735_B": {
+   "src": "encoder.layers.20.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6735_S": {
+   "src": "encoder.layers.20.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6757_B": {
+   "src": "encoder.layers.20.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6757_S": {
+   "src": "encoder.layers.20.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.20.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.20.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.20.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.20.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.20.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.20.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.20.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.20.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6758_B": {
+   "src": "encoder.layers.20.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6758_S": {
+   "src": "encoder.layers.20.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6759_B": {
+   "src": "encoder.layers.20.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6759_S": {
+   "src": "encoder.layers.20.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6760_B": {
+   "src": "encoder.layers.21.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6760_S": {
+   "src": "encoder.layers.21.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6761_B": {
+   "src": "encoder.layers.21.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6761_S": {
+   "src": "encoder.layers.21.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6762_B": {
+   "src": "encoder.layers.21.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6762_S": {
+   "src": "encoder.layers.21.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6769_B": {
+   "src": "encoder.layers.21.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6769_S": {
+   "src": "encoder.layers.21.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6770_B": {
+   "src": "encoder.layers.21.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6770_S": {
+   "src": "encoder.layers.21.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6773_B": {
+   "src": "encoder.layers.21.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6773_S": {
+   "src": "encoder.layers.21.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6795_B": {
+   "src": "encoder.layers.21.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6795_S": {
+   "src": "encoder.layers.21.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.21.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.21.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.21.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.21.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.21.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.21.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.21.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.21.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6796_B": {
+   "src": "encoder.layers.21.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6796_S": {
+   "src": "encoder.layers.21.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6797_B": {
+   "src": "encoder.layers.21.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6797_S": {
+   "src": "encoder.layers.21.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6798_B": {
+   "src": "encoder.layers.22.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6798_S": {
+   "src": "encoder.layers.22.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6799_B": {
+   "src": "encoder.layers.22.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6799_S": {
+   "src": "encoder.layers.22.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6800_B": {
+   "src": "encoder.layers.22.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6800_S": {
+   "src": "encoder.layers.22.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6807_B": {
+   "src": "encoder.layers.22.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6807_S": {
+   "src": "encoder.layers.22.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6808_B": {
+   "src": "encoder.layers.22.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6808_S": {
+   "src": "encoder.layers.22.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6811_B": {
+   "src": "encoder.layers.22.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6811_S": {
+   "src": "encoder.layers.22.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6833_B": {
+   "src": "encoder.layers.22.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6833_S": {
+   "src": "encoder.layers.22.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.22.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.22.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.22.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.22.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.22.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.22.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.22.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.22.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6834_B": {
+   "src": "encoder.layers.22.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6834_S": {
+   "src": "encoder.layers.22.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6835_B": {
+   "src": "encoder.layers.22.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6835_S": {
+   "src": "encoder.layers.22.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6836_B": {
+   "src": "encoder.layers.23.feed_forward1.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6836_S": {
+   "src": "encoder.layers.23.feed_forward1.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6837_B": {
+   "src": "encoder.layers.23.feed_forward1.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6837_S": {
+   "src": "encoder.layers.23.feed_forward1.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6838_B": {
+   "src": "encoder.layers.23.self_attn.q_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6838_S": {
+   "src": "encoder.layers.23.self_attn.q_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6845_B": {
+   "src": "encoder.layers.23.self_attn.k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6845_S": {
+   "src": "encoder.layers.23.self_attn.k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6846_B": {
+   "src": "encoder.layers.23.self_attn.v_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6846_S": {
+   "src": "encoder.layers.23.self_attn.v_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6849_B": {
+   "src": "encoder.layers.23.self_attn.relative_k_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6849_S": {
+   "src": "encoder.layers.23.self_attn.relative_k_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6871_B": {
+   "src": "encoder.layers.23.self_attn.o_proj.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6871_S": {
+   "src": "encoder.layers.23.self_attn.o_proj.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.23.conv.pointwise_conv1.weight_B": {
+   "src": "encoder.layers.23.conv.pointwise_conv1.weight",
+   "op": "q8",
+   "shape": [
+    2048,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.23.conv.pointwise_conv1.weight_S": {
+   "src": "encoder.layers.23.conv.pointwise_conv1.weight",
+   "op": "q8_s",
+   "shape": [
+    2048,
+    8
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.23.conv.pointwise_conv2.weight_B": {
+   "src": "encoder.layers.23.conv.pointwise_conv2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "m.encoder.layers.23.conv.pointwise_conv2.weight_S": {
+   "src": "encoder.layers.23.conv.pointwise_conv2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6872_B": {
+   "src": "encoder.layers.23.feed_forward2.linear1.weight",
+   "op": "q8",
+   "shape": [
+    4096,
+    8,
+    128
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6872_S": {
+   "src": "encoder.layers.23.feed_forward2.linear1.weight",
+   "op": "q8_s",
+   "shape": [
+    4096,
+    8
+   ],
+   "cols": 1024
+  },
+  "onnx::MatMul_6873_B": {
+   "src": "encoder.layers.23.feed_forward2.linear2.weight",
+   "op": "q8",
+   "shape": [
+    1024,
+    32,
+    128
+   ],
+   "cols": 4096
+  },
+  "onnx::MatMul_6873_S": {
+   "src": "encoder.layers.23.feed_forward2.linear2.weight",
+   "op": "q8_s",
+   "shape": [
+    1024,
+    32
+   ],
+   "cols": 4096
+  }
+ },
+ "decoder": {
+  "d.embedding.weight": {
+   "src": "decoder.embedding.weight",
+   "op": "id",
+   "shape": [
+    8193,
+    640
+   ]
+  },
+  "d.decoder_projector.bias": {
+   "src": "decoder.decoder_projector.bias",
+   "op": "id",
+   "shape": [
+    640
+   ]
+  },
+  "onnx::LSTM_186": {
+   "src": "decoder.lstm.weight_ih_l0",
+   "op": "lstm",
+   "shape": [
+    1,
+    2560,
+    640
+   ]
+  },
+  "onnx::LSTM_187": {
+   "src": "decoder.lstm.weight_hh_l0",
+   "op": "lstm",
+   "shape": [
+    1,
+    2560,
+    640
+   ]
+  },
+  "onnx::LSTM_188": {
+   "src": "decoder.lstm.bias_ih_l0",
+   "op": "lstm_b",
+   "shape": [
+    1,
+    5120
+   ],
+   "src2": "decoder.lstm.bias_hh_l0"
+  },
+  "onnx::LSTM_206": {
+   "src": "decoder.lstm.weight_ih_l1",
+   "op": "lstm",
+   "shape": [
+    1,
+    2560,
+    640
+   ]
+  },
+  "onnx::LSTM_207": {
+   "src": "decoder.lstm.weight_hh_l1",
+   "op": "lstm",
+   "shape": [
+    1,
+    2560,
+    640
+   ]
+  },
+  "onnx::LSTM_208": {
+   "src": "decoder.lstm.bias_ih_l1",
+   "op": "lstm_b",
+   "shape": [
+    1,
+    5120
+   ],
+   "src2": "decoder.lstm.bias_hh_l1"
+  },
+  "onnx::MatMul_209": {
+   "src": "decoder.decoder_projector.weight",
+   "op": "t",
+   "shape": [
+    640,
+    640
+   ]
+  }
+ },
+ "joint": {
+  "j.head.weight": {
+   "src": "joint.head.weight",
+   "op": "id",
+   "shape": [
+    8198,
+    640
+   ]
+  },
+  "j.head.bias": {
+   "src": "joint.head.bias",
+   "op": "id",
+   "shape": [
+    8198
+   ]
+  }
+ }
+}
