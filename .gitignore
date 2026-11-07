@@ -1,5 +1,6 @@
 /target
 *.onnx
 !/graphs/*.onnx
+!/graphs-int8/*.onnx
 # local build dir (this machine builds to G:)
 /.cargo/config.toml
