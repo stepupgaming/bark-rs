@@ -64,7 +64,7 @@ Set `BARK_PYLIB` to an extra site directory if `onnx`/`onnxruntime` live outside
 - 16 kHz mono in. Resampling is the caller's job.
 - One pass over the whole clip. The model card says long-recording segmentation hasn't been qualified. 67 s works; longer audio should be cut into chunks at silences.
 - English only (the model).
-- Android: it builds (see below), but it hasn't run on a phone yet.
+- Android: tested as a command-line binary over adb (see below), not yet inside an app.
 
 ## Android
 
@@ -83,4 +83,4 @@ In an app, `libc++_shared.so` goes in `jniLibs/arm64-v8a`. For a Tauri 2 app (Ca
 
 ## License
 
-Model weights and derived graphs: CC-BY-4.0, see [NOTICE](NOTICE). Code: not yet chosen (private repo).
+Model weights and derived graphs: CC-BY-4.0, see [NOTICE](NOTICE). Code: MIT or Apache-2.0, at your option ([LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE)).
